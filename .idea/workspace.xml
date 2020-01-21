@@ -125,49 +125,57 @@
     </state>
     <state x="322" y="0" width="1034" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579543576335" />
     <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579471427946" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1579472817072">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1579559746703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579472817072" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1579472817071">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579559746703" />
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579472817071" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1579472817071">
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579472817071" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1579472817072">
+    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579472817072" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1579472397581">
+    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579472397581" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1579472397581">
+    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579472397581" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1579472397581">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579472397581" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1579472397581">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579472397581" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1579462592428">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1579569328398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579462592428" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579569328398" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1579561672888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579561672888" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1579050749620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579050749620" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579462474344">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579559654218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579462474344" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579559654218" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579560529770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579560529770" />
   </component>
 </project>

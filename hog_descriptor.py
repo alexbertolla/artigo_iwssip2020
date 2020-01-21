@@ -6,6 +6,7 @@ from skimage.feature import corner_harris, corner_subpix, corner_peaks, shape_in
 from skimage.transform import warp, SimilarityTransform, AffineTransform, resize
 import cv2
 import numpy as np
+from numpy import array
 from skimage import data
 from skimage.util import img_as_float
 from skimage.exposure import rescale_intensity
@@ -14,6 +15,23 @@ from PIL import Image
 import os
 import glob
 from sklearn.svm import LinearSVC
+
+
+def ler_imagens_treinamento(diretorio, lista_imagens, classe):
+    array_hog = []
+    array_classe = []
+    for imagem in lista_imagens:
+        for file in glob.glob(diretorio + '/'+imagem):
+#            print('Processing Image {}'. format(imagem))
+            image_rgb = cv2.cvtColor(cv2.imread(file), cv2.COLOR_BGR2RGB)
+#            gray = cv2.cvtColor(image_rgb, cv2.COLOR_BGR2GRAY)
+            fd, image_hog = hog(image_rgb, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualize=True)
+            linha, coluna = image_hog.shape
+            for l in range(linha):
+                for c in range(coluna):
+                    if image_hog[l, c] > 0:
+                        train_features.append(image_hog[l, c])
+                        train_labels.append(classe)
 
 
 classe_spodoptera = 'Spodoptera'
@@ -28,26 +46,52 @@ train_names_outra_lagarta = os.listdir(train_path_outra_lagarta)
 train_features = []
 train_labels = []
 
+array_caracteristicas = []
+
 print('[STATUS] Started extracting haralick textures from Spodoptera images..')
 
 #fig, axes = pylab.subplots(ncols=3, nrows=4)
 x = 0
 y = 0
-for train_name_lagarta in train_names_lagarta:
-    cur_path = train_path_lagarta + '/' + train_name_lagarta
-    cur_label = train_name_lagarta
-    for file in glob.glob(cur_path):
+#LER IMAGENS TREINAMENTO SPODOPTERA FUNGIPERD
+
+print(train_features)
+print(train_labels)
+
+
+ler_imagens_treinamento(train_path_outra_lagarta, train_names_outra_lagarta, classe_outra_lagarta)
+#ler_imagens_treinamento(train_path_lagarta, train_names_lagarta, classe_spodoptera)
+
+
+print(train_labels)
+print(train_features)
+
+
+#array_caracteristicas_outras_lagartas = ler_imagens_treinamento(train_path_outra_lagarta, train_names_outra_lagarta, classe_outra_lagarta)
+#for train_name_lagarta in train_names_lagarta:
+#    cur_path = train_path_lagarta + '/' + train_name_lagarta
+#    cur_label = train_name_lagarta
+
+#    for file in glob.glob(cur_path):
 #        print('Processing Image - {} in {}'. format(i, cur_label))
-        image = cv2.cvtColor(cv2.imread(file), cv2.COLOR_BGR2RGB)
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        fd, image_hog = hog(image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualize=True)
-        print(image_hog[:, :])
+#        image = cv2.cvtColor(cv2.imread(file), cv2.COLOR_BGR2RGB)
+#        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#        fd, image_hog = hog(image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualize=True)
+#        array_hog = []
+#        linha, coluna = image_hog.shape
+#        for l in range(linha):
+#            for c in range(coluna):
+#                if image_hog[l, c] > 0:
+#                    array_hog.append([cur_label, l, c, image_hog[l, c]])
+#       array_imagem_hog.append(array_hog)
+
+#print(array_imagem_hog)
 #        pylab.figure(figsize=(4, 4))
 #        pylab.imshow(image_hog)
         #train_features.append(features)
         #train_labels.append(classe_spodoptera)
 
-pylab.show()
+#pylab.show()
 
 #fd, image_8_hog = hog(image_8, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualize=True)
 #fd, image_8_original_hog = hog(image_8_original, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualize=True)
