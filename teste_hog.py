@@ -28,16 +28,18 @@ for imagem in train_names_lagarta:
         for l in range(linha):
             for c in range(coluna):
                 if image_hog[l, c] > 0:
-                    lista.append(image_hog[l, c])
+                    lista.append([np.array(image_hog[l, c])])
                     #feature_vector.append(image_hog[l, c])
-                    feature_vector.append(lista)
+                    #feature_vector.append(lista)
 
 
 #hog_descriptor = cv2.HOGDescriptor()
 #print(hog_descriptor)
-#hog_people = cv2.HOGDescriptor_getDefaultPeopleDetector()
-#print(hog_people)
-print(feature_vector)
+hog_people = cv2.HOGDescriptor_getDefaultPeopleDetector()
+print(hog_people)
+#array_lista = np.asanyarray(lista)
+lista = np.asarray(lista)
+print(lista)
 
 
 
